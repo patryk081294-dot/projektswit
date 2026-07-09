@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projekt Świt — Patryk Świtek | Projekty sanitarne Częstochowa</title>
+<meta name="description" content="Projekty sieci i instalacji gazowych, wodnych, kanalizacyjnych, wentylacyjnych, ciepłowniczych i przeciwpożarowych. Częstochowa i okolice. Bezpłatna wycena w 24-48h.">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+<link rel="apple-touch-icon" href="assets/favicon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Projekt Świt Patryk Świtek - Projekty sanitarne",
+  "image": "assets/logo.jpg",
+  "telephone": "+48794031550",
+  "email": "projektswit@gmail.com",
+  "taxID": "5732919745",
+  "vatID": "PL5732919745",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "ul. Gen. Jana Henryka Dąbrowskiego 13/lok. 7B",
+    "addressLocality": "Częstochowa",
+    "postalCode": "42-202",
+    "addressCountry": "PL"
+  },
+  "areaServed": "Częstochowa i okolice",
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "17:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "14:00" }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "6"
+  },
+  "sameAs": ["https://www.facebook.com/Projekt-%C5%9Awit-Patryk-%C5%9Awitek-103199728582241"]
+}
+</script>
+<style>
+  :root{
+    --navy-deep:   #0a1f30;
+    --navy:        #123049;
+    --navy-line:   #6fb3d1;
+    --paper:       #ece6d6;
+    --paper-dim:   #ddd5bd;
+    --copper:      #c1723a;
+    --copper-lt:   #e0955c;
+    --ink:         #16232b;
+    --ink-soft:    #4a5a63;
+    --white:       #f6f4ee;
+    --ok-green:    #4f7a5c;
+
+    --f-display: 'Oswald', sans-serif;
+    --f-body:    'IBM Plex Sans', sans-serif;
+    --f-mono:    'IBM Plex Mono', monospace;
+
+    --radius: 2px;
+    --container: 1180px;
+  }
+
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family: var(--f-body);
+    color: var(--ink);
+    background: var(--paper);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  img{max-width:100%; display:block;}
+  a{color:inherit;}
+  ul{list-style:none;}
+
+  .wrap{max-width: var(--container); margin: 0 auto; padding: 0 28px;}
+
+  h1,h2,h3,h4{
+    font-family: var(--f-display);
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    font-weight: 600;
+    color: var(--navy-deep);
+    line-height: 1.1;
+  }
+  .eyebrow{
+    font-family: var(--f-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--copper);
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom: 14px;
+  }
+  .eyebrow::before{
+    content:"";
+    width: 26px; height:1px;
+    background: var(--copper);
+    display:inline-block;
+  }
+  .section-title{
+    font-size: clamp(1.9rem, 3.4vw, 2.7rem);
+    max-width: 720px;
+  }
+  .section-sub{
+    font-family: var(--f-body);
+    text-transform:none;
+    color: var(--ink-soft);
+    font-weight:400;
+    font-size:1.05rem;
+    max-width: 620px;
+    margin-top: 14px;
+  }
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    gap: 10px;
+    font-family: var(--f-mono);
+    font-size: 0.85rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 15px 26px;
+    border-radius: var(--radius);
+    text-decoration:none;
+    border: 1px solid transparent;
+    background: none;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor:pointer;
+    transition: transform .15s ease, background .2s ease, color .2s ease, border-color .2s ease;
+  }
+  .btn:focus-visible{ outline: 2px solid var(--copper-lt); outline-offset: 3px; }
+  .btn-copper{ background: var(--copper); color: var(--white); }
+  .btn-copper:hover{ background: var(--copper-lt); transform: translateY(-1px); }
+  .btn-outline{ border-color: rgba(246,244,238,0.35); color: var(--white); }
+  .btn-outline:hover{ border-color: var(--white); background: rgba(246,244,238,0.08); }
+  .btn-outline-dark{ border-color: rgba(22,35,43,0.3); color: var(--navy-deep); }
+  .btn-outline-dark:hover{ border-color: var(--navy-deep); background: rgba(22,35,43,0.05); }
+
+  /* ---------- HEADER ---------- */
+  header{
+    position: sticky; top:0; z-index: 50;
+    border-bottom: 1px solid rgba(111,179,209,0.18);
+  }
+  header::before{
+    content:"";
+    position:absolute; inset:0;
+    background: rgba(10,31,48,0.96);
+    backdrop-filter: blur(6px);
+    z-index:-1;
+  }
+  .nav{
+    display:flex; align-items:center; justify-content:space-between;
+    height: 78px;
+  }
+  .logo{
+    display:flex;
+    align-items:center;
+    gap: 12px;
+    font-family: var(--f-display);
+    color: var(--white);
+    font-size: 1.15rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration:none;
+    line-height:1.15;
+  }
+  .logo img{ height: 34px; width:auto; flex-shrink:0; }
+  .logo-text span{
+    display:block;
+    font-family: var(--f-mono);
+    font-size: 0.62rem;
+    color: var(--navy-line);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-top: 2px;
+  }
+  .nav-links{ display:flex; gap: 32px; align-items:center; }
+  .nav-links a{
+    font-family: var(--f-mono);
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: rgba(246,244,238,0.75);
+    text-decoration:none;
+    transition: color .15s ease;
+  }
+  .nav-links a:hover{ color: var(--copper-lt); }
+  .nav-cta{ display:flex; align-items:center; gap:18px; }
+  .nav-phone{
+    font-family: var(--f-mono);
+    color: var(--white);
+    font-size: 0.85rem;
+    text-decoration:none;
+    display:none;
+  }
+  .menu-btn{ display:none; }
+
+  @media (max-width: 900px){
+    .nav-links{
+      position:fixed; inset: 78px 0 0 0;
+      background: var(--navy-deep);
+      flex-direction:column;
+      padding: 30px 28px;
+      gap: 22px;
+      transform: translateX(100%);
+      transition: transform .25s ease;
+      z-index: 60;
+      overflow-y: auto;
+    }
+    .nav-links.open{ transform: translateX(0); }
+    .nav-links a{ font-size: 1rem; }
+    .menu-btn{
+      display:flex; width:40px; height:40px; align-items:center; justify-content:center;
+      background:none; border:1px solid rgba(246,244,238,0.3); color:var(--white);
+      border-radius: var(--radius); cursor:pointer;
+    }
+    .nav-cta .btn-copper{ padding: 11px 16px; font-size: 0.75rem; }
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    background: linear-gradient(180deg, var(--navy-deep) 0%, var(--navy) 100%);
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+    padding: 84px 0 0;
+  }
+  .hero::before{
+    content:"";
+    position:absolute; inset:0;
+    background-image:
+      linear-gradient(rgba(111,179,209,0.07) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(111,179,209,0.07) 1px, transparent 1px);
+    background-size: 42px 42px;
+    pointer-events:none;
+  }
+  .hero-grid{
+    position:relative; z-index:1;
+    display:grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 40px;
+    align-items:center;
+    padding-bottom: 60px;
+  }
+  .hero-badge{
+    display:inline-flex; align-items:center; gap:8px;
+    font-family: var(--f-mono); font-size:0.72rem; letter-spacing:0.1em; text-transform:uppercase;
+    color: var(--navy-line);
+    border: 1px solid rgba(111,179,209,0.35);
+    padding: 7px 14px; border-radius: 999px;
+    margin-bottom: 26px;
+  }
+  .hero-badge b{ color: var(--copper-lt); font-weight:600; }
+  .hero h1{
+    color: var(--white);
+    font-size: clamp(2.3rem, 4.6vw, 3.6rem);
+    max-width: 12ch;
+  }
+  .hero h1 em{
+    font-style: normal;
+    color: var(--copper-lt);
+  }
+  .hero-lead{
+    margin-top: 22px;
+    font-size: 1.08rem;
+    color: rgba(246,244,238,0.82);
+    max-width: 46ch;
+  }
+  .hero-actions{ display:flex; gap:16px; flex-wrap:wrap; margin-top: 34px; }
+  .hero-trust{
+    display:flex; flex-wrap:wrap; gap: 28px;
+    margin-top: 46px;
+    padding-top: 26px;
+    border-top: 1px solid rgba(246,244,238,0.14);
+  }
+  .trust-item{ font-family: var(--f-mono); font-size:0.78rem; color: rgba(246,244,238,0.7); }
+  .trust-item b{ display:block; color: var(--white); font-size:1.25rem; font-family: var(--f-display); letter-spacing:0.02em; margin-bottom:2px;}
+
+  .hero-diagram{ position:relative; z-index:1; }
+  .hero-diagram svg{ width:100%; height:auto; }
+  .diagram-line{
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
+    animation: draw 1.6s ease forwards;
+  }
+  .diagram-node{ opacity:0; animation: fadein .5s ease forwards; }
+  @keyframes draw{ to{ stroke-dashoffset:0; } }
+  @keyframes fadein{ to{ opacity:1; } }
+  @media (prefers-reduced-motion: reduce){
+    .diagram-line{ stroke-dashoffset:0; animation:none; }
+    .diagram-node{ opacity:1; animation:none; }
+  }
+
+  @media (max-width: 980px){
+    .hero-grid{ grid-template-columns: 1fr; padding-top: 10px; }
+    .hero-diagram{ order:-1; max-width: 420px; margin: 0 auto 10px; }
+  }
+
+  /* ---------- MARQUEE / STRIP ---------- */
+  .strip{
+    background: var(--copper);
+    color: var(--navy-deep);
+    overflow:hidden;
+    white-space:nowrap;
+    border-bottom: 1px solid rgba(10,31,48,0.15);
+  }
+  .strip-inner{
+    display:inline-flex;
+    animation: scroll 32s linear infinite;
+  }
+  .strip span{
+    font-family: var(--f-mono);
+    font-size: 0.78rem;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    padding: 12px 26px;
+    display:inline-flex;
+    align-items:center;
+    gap: 10px;
+  }
+  .strip span::after{ content:"◆"; opacity:0.5; font-size:0.6rem; }
+  @keyframes scroll{ from{ transform: translateX(0);} to{ transform: translateX(-50%);} }
+  @media (prefers-reduced-motion: reduce){ .strip-inner{ animation:none; } }
+
+  /* ---------- SERVICES ---------- */
+  .section{ padding: 96px 0; }
+  .section-head{ display:flex; justify-content:space-between; align-items:flex-end; gap:30px; flex-wrap:wrap; margin-bottom: 52px; }
+
+  .services-grid{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: rgba(22,35,43,0.14);
+    border: 1px solid rgba(22,35,43,0.14);
+  }
+  .service-card{
+    background: var(--paper);
+    padding: 34px 28px;
+    position:relative;
+    transition: background .2s ease;
+  }
+  .service-card:hover{ background: var(--white); }
+  .service-num{
+    font-family: var(--f-mono);
+    font-size: 0.72rem;
+    color: var(--copper);
+    letter-spacing: 0.08em;
+    margin-bottom: 18px;
+    display:block;
+  }
+  .service-card h3{
+    font-size: 1.15rem;
+    margin-bottom: 12px;
+    letter-spacing:0.01em;
+  }
+  .service-card p{ color: var(--ink-soft); font-size: 0.94rem; }
+  .service-icon{ width: 34px; height:34px; margin-bottom: 18px; color: var(--navy); }
+
+  @media (max-width: 900px){ .services-grid{ grid-template-columns: repeat(2,1fr);} }
+  @media (max-width: 600px){ .services-grid{ grid-template-columns: 1fr;} }
+
+  /* ---------- WHY US ---------- */
+  .why{
+    background: var(--navy-deep);
+    color: var(--white);
+  }
+  .why .section-title{ color: var(--white); }
+  .why-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items:start;
+    margin-top: 20px;
+  }
+  .why-photo{
+    position:relative;
+    aspect-ratio: 4 / 3;
+    border: 1px solid rgba(111,179,209,0.25);
+    background:
+      linear-gradient(rgba(111,179,209,0.09) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(111,179,209,0.09) 1px, transparent 1px);
+    background-size: 28px 28px;
+    background-color: var(--navy);
+  }
+  .why-photo picture{ display:block; width:100%; height:100%; }
+  .why-photo img{ width:100%; height:100%; object-fit:cover; object-position: center 42%; filter: saturate(0.95) contrast(1.03); }
+  .why-photo.img-fallback::after{
+    content: "Inspekcja na budowie";
+    position:absolute; inset:0;
+    display:flex; align-items:center; justify-content:center;
+    font-family: var(--f-mono); font-size:0.78rem; letter-spacing:0.08em; text-transform:uppercase;
+    color: var(--navy-line);
+  }
+  .why-photo-tag{
+    position:absolute; bottom:14px; left:14px;
+    background: rgba(10,31,48,0.85);
+    border: 1px solid rgba(111,179,209,0.3);
+    font-family: var(--f-mono); font-size:0.68rem; letter-spacing:0.08em; text-transform:uppercase;
+    padding: 8px 12px; color: var(--navy-line);
+  }
+  .why-list{ display:flex; flex-direction:column; gap: 30px; }
+  .why-item{ display:flex; gap: 20px; }
+  .why-item .idx{
+    font-family: var(--f-mono); color: var(--copper-lt); font-size:0.85rem; padding-top:4px; flex-shrink:0; width: 28px;
+  }
+  .why-item h4{ color: var(--white); font-size:1.05rem; margin-bottom:8px; letter-spacing:0.01em; }
+  .why-item p{ color: rgba(246,244,238,0.72); font-size:0.94rem; }
+
+  @media (max-width: 860px){ .why-grid{ grid-template-columns: 1fr; } .why-photo{ max-width:440px; } }
+
+  /* ---------- PROCESS ---------- */
+  .process-list{ margin-top: 20px; border-top: 1px solid rgba(22,35,43,0.15); }
+  .process-row{
+    display:grid;
+    grid-template-columns: 90px 1fr 1.4fr;
+    gap: 30px;
+    padding: 30px 0;
+    border-bottom: 1px solid rgba(22,35,43,0.15);
+    align-items:baseline;
+  }
+  .process-row .pnum{ font-family: var(--f-mono); font-size:0.85rem; color: var(--copper); }
+  .process-row h3{ font-size: 1.15rem; letter-spacing:0.01em; }
+  .process-row p{ color: var(--ink-soft); font-size:0.95rem; max-width: 52ch; }
+  @media (max-width: 720px){
+    .process-row{ grid-template-columns: 1fr; gap:8px; }
+  }
+
+  /* ---------- PROOF / PHOTO BAND ---------- */
+  .proof{
+    display:grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 2px;
+    background: var(--navy-deep);
+  }
+  .proof-photo{
+    position:relative; min-height: 420px; aspect-ratio: 16 / 10;
+    background:
+      linear-gradient(rgba(111,179,209,0.09) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(111,179,209,0.09) 1px, transparent 1px);
+    background-size: 28px 28px;
+    background-color: var(--navy);
+  }
+  .proof-photo img{ width:100%; height:100%; object-fit:cover; }
+  .proof-photo.img-fallback::after{
+    content: "Projekt sieci sanitarnej";
+    position:absolute; inset:0;
+    display:flex; align-items:center; justify-content:center;
+    font-family: var(--f-mono); font-size:0.78rem; letter-spacing:0.08em; text-transform:uppercase;
+    color: var(--navy-line);
+  }
+  .proof-copy{
+    background: var(--navy-deep);
+    color: var(--white);
+    padding: 60px 50px;
+    display:flex; flex-direction:column; justify-content:center;
+  }
+  .proof-copy .eyebrow{ color: var(--copper-lt); }
+  .proof-copy .eyebrow::before{ background: var(--copper-lt); }
+  .proof-copy h2{ color: var(--white); font-size: clamp(1.6rem,2.6vw,2.1rem); }
+  .proof-copy p{ color: rgba(246,244,238,0.75); margin-top:16px; font-size:0.98rem; }
+  .proof-stats{ display:flex; gap:40px; margin-top:34px; }
+  .proof-stats div b{ display:block; font-family:var(--f-display); font-size:2rem; color: var(--copper-lt); }
+  .proof-stats div span{ font-family:var(--f-mono); font-size:0.7rem; text-transform:uppercase; letter-spacing:0.06em; color: rgba(246,244,238,0.6); }
+  @media (max-width: 860px){ .proof{ grid-template-columns:1fr; } .proof-photo{ min-height:280px; } .proof-copy{ padding: 44px 28px; } }
+
+  /* ---------- REVIEWS ---------- */
+  .reviews-grid{
+    display:grid;
+    grid-template-columns: 0.7fr 1.3fr;
+    gap: 50px;
+    margin-top: 20px;
+  }
+  .rating-card{
+    background: var(--white);
+    border: 1px solid rgba(22,35,43,0.14);
+    padding: 34px;
+  }
+  .rating-num{ font-family: var(--f-display); font-size: 3.4rem; color: var(--navy-deep); line-height:1; }
+  .stars{ color: var(--copper); font-size: 1.2rem; letter-spacing: 2px; margin: 12px 0 10px; }
+  .rating-card p{ font-family: var(--f-mono); font-size:0.78rem; color: var(--ink-soft); text-transform:uppercase; letter-spacing:0.04em; }
+  .rating-card a{ display:inline-block; margin-top:18px; font-family:var(--f-mono); font-size:0.78rem; color: var(--navy); text-decoration:underline; text-underline-offset:3px; }
+
+  .review-cards{ display:flex; flex-direction:column; gap: 20px; }
+  .review-card{
+    background: var(--white);
+    border: 1px solid rgba(22,35,43,0.14);
+    padding: 26px 28px;
+  }
+  .review-card .stars{ font-size:0.95rem; margin: 0 0 10px; }
+  .review-card p{ color: var(--ink); font-size: 1rem; }
+  .review-meta{
+    margin-top: 16px; display:flex; justify-content:space-between; align-items:center;
+    font-family: var(--f-mono); font-size:0.72rem; color: var(--ink-soft); text-transform:uppercase; letter-spacing:0.04em;
+  }
+  @media (max-width: 860px){ .reviews-grid{ grid-template-columns:1fr; } }
+
+  /* ---------- CONTACT ---------- */
+  .contact{
+    background: var(--navy-deep);
+    color: var(--white);
+  }
+  .contact-grid{
+    display:grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 60px;
+    margin-top: 30px;
+  }
+  .contact .section-title{ color:var(--white); }
+  .contact-info-list{ margin-top: 30px; display:flex; flex-direction:column; gap: 26px; }
+  .contact-info-item{ border-top: 1px solid rgba(246,244,238,0.15); padding-top:18px; }
+  .contact-info-item span{ display:block; font-family:var(--f-mono); font-size:0.7rem; text-transform:uppercase; letter-spacing:0.08em; color: var(--navy-line); margin-bottom:6px; }
+  .contact-info-item a, .contact-info-item p{ font-size:1.05rem; text-decoration:none; color: var(--white); }
+  .map-frame{ margin-top: 30px; border: 1px solid rgba(111,179,209,0.3); height: 220px; overflow:hidden; }
+  .map-frame iframe{ width:100%; height:100%; border:0; filter: grayscale(0.3) contrast(1.05); }
+
+  .form-card{
+    background: var(--paper);
+    color: var(--ink);
+    padding: 40px;
+    border: 1px solid rgba(246,244,238,0.1);
+  }
+  .form-card h3{ font-size:1.2rem; margin-bottom: 6px; }
+  .form-card .section-sub{ margin-top:6px; margin-bottom: 26px; font-size:0.92rem; }
+  .field{ margin-bottom: 18px; }
+  .field label{ display:block; font-family:var(--f-mono); font-size:0.7rem; text-transform:uppercase; letter-spacing:0.07em; margin-bottom:8px; color: var(--ink-soft); }
+  .field input, .field select, .field textarea{
+    width:100%;
+    font-family: var(--f-body);
+    font-size: 0.98rem;
+    padding: 13px 14px;
+    border: 1px solid rgba(22,35,43,0.25);
+    background: var(--white);
+    border-radius: var(--radius);
+    color: var(--ink);
+  }
+  .field input:focus, .field select:focus, .field textarea:focus{
+    outline: 2px solid var(--copper); outline-offset: 1px; border-color: var(--copper);
+  }
+  .field-row{ display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  .form-card textarea{ resize: vertical; min-height: 100px; }
+  .consent-field{ margin-top: 22px; margin-bottom: 22px; }
+  .consent-label{
+    display:flex; align-items:flex-start; gap: 12px;
+    cursor:pointer;
+  }
+  .consent-label input[type="checkbox"]{
+    width: 18px; height: 18px; margin-top: 3px; flex-shrink:0;
+    accent-color: var(--copper);
+    cursor:pointer;
+  }
+  .consent-label span{
+    font-size: 0.82rem; line-height:1.5; color: var(--ink-soft);
+  }
+  .consent-label span a{ color: var(--navy); text-decoration: underline; text-underline-offset:2px; }
+  .consent-error{
+    display:none;
+    font-family: var(--f-mono); font-size:0.74rem; color:#a33d2c;
+    margin-top: 8px;
+  }
+  .consent-error.show{ display:block; }
+  .form-foot{ display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; margin-top: 8px; }
+  .form-note{ font-family: var(--f-mono); font-size:0.72rem; color: var(--ink-soft); }
+  @media (max-width: 860px){ .contact-grid{ grid-template-columns:1fr; } .field-row{ grid-template-columns:1fr; } .form-card{ padding: 28px 22px; } }
+
+  /* ---------- FOOTER ---------- */
+  footer{ background: #071722; color: rgba(246,244,238,0.6); padding: 40px 0; }
+  .footer-inner{ display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap: 16px; }
+  footer .logo{ font-size: 1rem; }
+  footer .logo img{ height: 26px; }
+  .footer-links{ display:flex; gap:22px; font-family:var(--f-mono); font-size:0.75rem; text-transform:uppercase; letter-spacing:0.05em; }
+  .footer-links a{ text-decoration:none; color: rgba(246,244,238,0.6); }
+  .footer-links a:hover{ color: var(--copper-lt); }
+  .footer-copy{ font-family: var(--f-mono); font-size:0.72rem; margin-top: 20px; color: rgba(246,244,238,0.35); }
+  .footer-legal{
+    margin-top: 26px; padding-top: 20px;
+    border-top: 1px solid rgba(246,244,238,0.1);
+    font-size: 0.85rem; color: rgba(246,244,238,0.55);
+    line-height: 1.7;
+  }
+  .footer-legal strong{ color: rgba(246,244,238,0.8); }
+
+  /* utility */
+  .visually-hidden{ position:absolute; width:1px;height:1px; overflow:hidden; clip:rect(0,0,0,0); }
+
+  /* ---------- COOKIE BANNER ---------- */
+  .cookie-banner{
+    position: fixed;
+    left: 20px; right: 20px; bottom: 20px;
+    max-width: 760px;
+    margin: 0 auto;
+    background: var(--navy-deep);
+    color: var(--white);
+    border: 1px solid rgba(111,179,209,0.3);
+    border-radius: var(--radius);
+    padding: 22px 24px;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.35);
+    z-index: 100;
+    transform: translateY(140%);
+    transition: transform .4s ease;
+  }
+  .cookie-banner.show{ transform: translateY(0); }
+  .cookie-banner p{ font-size: 0.85rem; line-height:1.55; color: rgba(246,244,238,0.8); }
+  .cookie-banner p a{ color: var(--copper-lt); text-decoration:underline; text-underline-offset:2px; }
+  .cookie-banner-actions{ display:flex; gap: 12px; flex-wrap:wrap; margin-top: 16px; }
+  .cookie-banner-actions .btn{ padding: 11px 18px; font-size: 0.76rem; }
+  .cookie-banner-actions .btn-outline-dark{ border-color: rgba(246,244,238,0.3); color: var(--white); }
+  .cookie-banner-actions .btn-outline-dark:hover{ border-color: var(--white); background: rgba(246,244,238,0.08); }
+  @media (max-width: 500px){
+    .cookie-banner{ left:12px; right:12px; bottom:12px; padding: 18px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="logo">
+      <img src="assets/logo_icon_white.png" alt="" width="34" height="34">
+      <span class="logo-text">Projekt Świt<span>Patryk Świtek — Projekty sanitarne</span></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#uslugi">Usługi</a>
+      <a href="#proces">Proces</a>
+      <a href="#realizacje">Realizacje</a>
+      <a href="#opinie">Opinie</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="tel:794031550" class="nav-phone">794 031 550</a>
+      <a href="#kontakt" class="btn btn-copper">Bezpłatna wycena</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Otwórz menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="hero-badge">★★★★★ <b>5,0 / 5</b> na Google — 6 opinii</div>
+        <h1>Projekt sanitarny, który <em>przechodzi uzgodnienia</em> za pierwszym podejściem</h1>
+        <p class="hero-lead">Projektujemy sieci, przyłącza i instalacje gazowe, wodne, kanalizacyjne, wentylacyjne, ciepłownicze i przeciwpożarowe — dla inwestorów indywidualnych, deweloperów i firm wykonawczych w Częstochowie i okolicy.</p>
+        <div class="hero-actions">
+          <a href="#kontakt" class="btn btn-copper">Zamów bezpłatną wycenę</a>
+          <a href="tel:794031550" class="btn btn-outline">Zadzwoń: 794 031 550</a>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-item"><b>2020</b>rok założenia firmy</div>
+          <div class="trust-item"><b>6</b>branż sanitarnych w jednym zespole</div>
+          <div class="trust-item"><b>24–48h</b>na indywidualną wycenę</div>
+        </div>
+      </div>
+
+      <div class="hero-diagram" aria-hidden="true">
+        <svg viewBox="0 0 520 460" fmt="xMidYMid meet">
+          <!-- central node -->
+          <circle cx="260" cy="230" r="7" fill="#e0955c"/>
+          <text x="260" y="205" text-anchor="middle" font-family="IBM Plex Mono" font-size="11" fill="#f6f4ee" letter-spacing="1">PROJEKT ŚWIT</text>
+
+          <!-- 6 branch lines -->
+          <g fill="none" stroke="#6fb3d1" stroke-width="1.4">
+            <path class="diagram-line" style="animation-delay:.1s" d="M260,230 L110,90"/>
+            <path class="diagram-line" style="animation-delay:.25s" d="M260,230 L260,50"/>
+            <path class="diagram-line" style="animation-delay:.4s" d="M260,230 L410,90"/>
+            <path class="diagram-line" style="animation-delay:.55s" d="M260,230 L100,360"/>
+            <path class="diagram-line" style="animation-delay:.7s" d="M260,230 L260,410"/>
+            <path class="diagram-line" style="animation-delay:.85s" d="M260,230 L420,360"/>
+          </g>
+
+          <!-- nodes with labels -->
+          <g font-family="IBM Plex Mono" font-size="10.5" fill="#f6f4ee" letter-spacing="0.5">
+            <g class="diagram-node" style="animation-delay:1s">
+              <circle cx="110" cy="90" r="4.5" fill="#0a1f30" stroke="#6fb3d1" stroke-width="1.4"/>
+              <text x="110" y="72" text-anchor="middle">GAZ</text>
+            </g>
+            <g class="diagram-node" style="animation-delay:1.1s">
+              <circle cx="260" cy="50" r="4.5" fill="#0a1f30" stroke="#6fb3d1" stroke-width="1.4"/>
+              <text x="260" y="34" text-anchor="middle">C.O.</text>
+            </g>
+            <g class="diagram-node" style="animation-delay:1.2s">
+              <circle cx="410" cy="90" r="4.5" fill="#0a1f30" stroke="#6fb3d1" stroke-width="1.4"/>
+              <text x="410" y="72" text-anchor="middle">WODA</text>
+            </g>
+            <g class="diagram-node" style="animation-delay:1.3s">
+              <circle cx="100" cy="360" r="4.5" fill="#0a1f30" stroke="#6fb3d1" stroke-width="1.4"/>
+              <text x="100" y="382" text-anchor="middle">KANALIZACJA</text>
+            </g>
+            <g class="diagram-node" style="animation-delay:1.4s">
+              <circle cx="260" cy="410" r="4.5" fill="#0a1f30" stroke="#6fb3d1" stroke-width="1.4"/>
+              <text x="260" y="432" text-anchor="middle">WENTYLACJA</text>
+            </g>
+            <g class="diagram-node" style="animation-delay:1.5s">
+              <circle cx="420" cy="360" r="4.5" fill="#0a1f30" stroke="#6fb3d1" stroke-width="1.4"/>
+              <text x="420" y="382" text-anchor="middle">PPOŻ</text>
+            </g>
+          </g>
+
+          <!-- dimension-style frame ticks -->
+          <g stroke="#6fb3d1" stroke-width="1" opacity="0.35">
+            <line x1="20" y1="20" x2="20" y2="440"/>
+            <line x1="20" y1="20" x2="40" y2="20"/>
+            <line x1="20" y1="440" x2="40" y2="440"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <div class="strip" aria-hidden="true">
+    <div class="strip-inner">
+      <span>Instalacje gazowe</span><span>Sieci ciepłownicze</span><span>Instalacje wodociągowe</span><span>Kanalizacja sanitarna i deszczowa</span><span>Wentylacja i klimatyzacja</span><span>Instalacje przeciwpożarowe</span>
+      <span>Instalacje gazowe</span><span>Sieci ciepłownicze</span><span>Instalacje wodociągowe</span><span>Kanalizacja sanitarna i deszczowa</span><span>Wentylacja i klimatyzacja</span><span>Instalacje przeciwpożarowe</span>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="section" id="uslugi">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Zakres projektowy</div>
+          <h2 class="section-title">Sześć branż sanitarnych, jeden komplet dokumentacji</h2>
+          <p class="section-sub">Projektujemy sieci, przyłącza oraz instalacje zewnętrzne i wewnętrzne — od koncepcji, przez uzgodnienia, po dokumentację gotową do realizacji.</p>
+        </div>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <span class="service-num">01 / GAZ</span>
+          <h3>Instalacje gazowe</h3>
+          <p>Sieci i przyłącza gazowe, instalacje wewnętrzne, dobór szafek i reduktorów, projekty do zgłoszenia lub pozwolenia.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-num">02 / C.O.</span>
+          <h3>Sieci ciepłownicze</h3>
+          <p>Przyłącza cieplne, węzły, instalacje centralnego ogrzewania i ciepła technologicznego dla budynków mieszkalnych i przemysłowych.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-num">03 / WODA</span>
+          <h3>Instalacje wodociągowe</h3>
+          <p>Sieci i przyłącza wody, instalacje wewnętrzne, hydrofornie i dobór urządzeń pod rzeczywisty pobór.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-num">04 / KAN</span>
+          <h3>Kanalizacja sanitarna i deszczowa</h3>
+          <p>Sieci, przyłącza, przepompownie, separatory i zbiorniki retencyjne — z uwzględnieniem lokalnych warunków gruntowych.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-num">05 / WENT</span>
+          <h3>Wentylacja i klimatyzacja</h3>
+          <p>Wentylacja mechaniczna i grawitacyjna, projekty central wentylacyjnych i instalacji klimatyzacji dla obiektów każdej skali.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-num">06 / PPOŻ</span>
+          <h3>Instalacje przeciwpożarowe</h3>
+          <p>Hydranty wewnętrzne, instalacje tryskaczowe i inne zabezpieczenia ppoż. zgodne z wymaganiami rzeczoznawcy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="section why">
+    <div class="wrap">
+      <div class="eyebrow">Dlaczego my</div>
+      <h2 class="section-title">Nowoczesne narzędzia, konkretne terminy</h2>
+
+      <div class="why-grid">
+        <div class="why-photo">
+          <picture>
+            <source srcset="assets/nadzor-realizacja.webp" type="image/webp">
+            <img src="assets/nadzor-realizacja.jpg" alt="Nadzór inżyniera nad przyłączem sanitarnym na etapie realizacji" width="1408" height="768" loading="lazy" onerror="this.closest('.why-photo').classList.add('img-fallback'); this.remove();">
+          </picture>
+          <div class="why-photo-tag">Nadzór na etapie realizacji</div>
+        </div>
+
+        <div class="why-list">
+          <div class="why-item">
+            <span class="idx">01</span>
+            <div>
+              <h4>Indywidualna wycena</h4>
+              <p>Każda inwestycja ma inny zakres — wyceniamy dokładnie to, czego potrzebujesz, bez sztywnych cenników.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <span class="idx">02</span>
+            <div>
+              <h4>Nowoczesne oprogramowanie projektowe</h4>
+              <p>Wykrywamy kolizje międzybranżowe już na etapie projektu — zanim staną się problemem na budowie.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <span class="idx">03</span>
+            <div>
+              <h4>Elastyczność</h4>
+              <p>Dostosowujemy tempo prac i formę kontaktu do harmonogramu Twojej budowy i wymagań urzędu.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <span class="idx">04</span>
+            <div>
+              <h4>Doświadczenie od 2020 roku</h4>
+              <p>Setki uzgodnień z gestorami sieci i ZUD-ami w regionie częstochowskim — wiemy, czego oczekują urzędy.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section" id="proces">
+    <div class="wrap">
+      <div class="eyebrow">Jak to wygląda</div>
+      <h2 class="section-title">Od telefonu do dokumentacji — pięć kroków</h2>
+
+      <div class="process-list">
+        <div class="process-row">
+          <span class="pnum">01</span>
+          <h3>Kontakt i zakres</h3>
+          <p>Dzwonisz lub piszesz, opisujesz inwestycję — najlepiej z mapą do celów projektowych lub PZT, jeśli już je masz.</p>
+        </div>
+        <div class="process-row">
+          <span class="pnum">02</span>
+          <h3>Wycena</h3>
+          <p>W ciągu 24–48 godzin otrzymujesz indywidualną ofertę z zakresem prac i terminem realizacji.</p>
+        </div>
+        <div class="process-row">
+          <span class="pnum">03</span>
+          <h3>Projekt</h3>
+          <p>Przygotowujemy dokumentację branżową zgodną z obowiązującymi warunkami technicznymi.</p>
+        </div>
+        <div class="process-row">
+          <span class="pnum">04</span>
+          <h3>Uzgodnienia</h3>
+          <p>Prowadzimy projekt przez ZUD i gestorów sieci — zajmujemy się formalnościami, żebyś Ty mógł zająć się budową.</p>
+        </div>
+        <div class="process-row">
+          <span class="pnum">05</span>
+          <h3>Odbiór dokumentacji</h3>
+          <p>Przekazujemy komplet dokumentacji gotowej do zgłoszenia, pozwolenia lub bezpośrednio do realizacji.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROOF -->
+  <section class="proof" id="realizacje">
+    <div class="proof-photo">
+      <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3GEabkAkV9cYZswjRsG2o77UUlE/hf_20260708_195358_fa9e43f3-7769-4a6d-a93a-aa7162f6d255.png" alt="Blueprint projektu sieci sanitarnej na biurku projektanta" loading="lazy" onerror="this.closest('.proof-photo').classList.add('img-fallback'); this.remove();">
+    </div>
+    <div class="proof-copy">
+      <div class="eyebrow">Warsztat pracy</div>
+      <h2>Projekt, który wytrzymuje konfrontację z budową</h2>
+      <p>Każdy projekt sprawdzamy pod kątem realnych warunków wykonawczych — nie tylko zgodności z przepisami. Dzięki temu ekipa na budowie rzadziej wraca do nas z pytaniami.</p>
+      <div class="proof-stats">
+        <div><b>6</b><span>lat na rynku</span></div>
+        <div><b>5,0</b><span>oceny Google</span></div>
+        <div><b>6</b><span>branż projektowych</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="section" id="opinie">
+    <div class="wrap">
+      <div class="eyebrow">Opinie klientów</div>
+      <h2 class="section-title">Co mówią inwestorzy i wykonawcy</h2>
+
+      <div class="reviews-grid">
+        <div class="rating-card">
+          <div class="rating-num">5,0</div>
+          <div class="stars">★★★★★</div>
+          <p>Google — 6 opinii</p>
+          <a href="https://www.google.com/search?q=projekt+%C5%9Bwit+patryk+%C5%9Bwitek" target="_blank" rel="noopener">Zobacz opinie na Google →</a>
+        </div>
+
+        <div class="review-cards">
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>Projekty realizowane sprawnie i rzetelnie, bez zbędnych opóźnień — cały proces przebiegł bez niespodzianek.</p>
+            <div class="review-meta"><span>Karol Adamus</span><span>Google</span></div>
+          </div>
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>Bardzo dobra komunikacja na każdym etapie i dotrzymany termin realizacji zgodny z ustaleniami.</p>
+            <div class="review-meta"><span>Klient</span><span>Panorama Firm</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="kontakt">
+    <div class="wrap">
+      <div class="eyebrow">Kontakt</div>
+      <h2 class="section-title">Opowiedz nam o swojej inwestycji</h2>
+      <p class="section-sub" style="color:rgba(246,244,238,0.7)">Odpowiadamy na wszystkie zapytania w 24–48 godzin roboczych.</p>
+
+      <div class="contact-grid">
+        <div>
+          <div class="contact-info-list">
+            <div class="contact-info-item">
+              <span>Telefon</span>
+              <a href="tel:794031550">794 031 550</a>
+            </div>
+            <div class="contact-info-item">
+              <span>Adres pracowni</span>
+              <p>ul. Gen. Jana Henryka Dąbrowskiego 13, lok. 7B<br>42-202 Częstochowa</p>
+            </div>
+            <div class="contact-info-item">
+              <span>Godziny otwarcia</span>
+              <p>Pon–Pt: 9:00–17:00<br>Sobota: 10:00–14:00</p>
+              <p style="font-family:var(--f-mono); font-size:0.72rem; color:rgba(246,244,238,0.55); text-transform:uppercase; letter-spacing:0.05em; margin-top:8px;">Wizyta wyłącznie po telefonicznym umówieniu terminu</p>
+            </div>
+            <div class="contact-info-item">
+              <span>Obszar działania</span>
+              <p>Częstochowa i okolice</p>
+            </div>
+            <div class="contact-info-item">
+              <span>Media społecznościowe</span>
+              <a href="https://www.facebook.com/Projekt-%C5%9Awit-Patryk-%C5%9Awitek-103199728582241" target="_blank" rel="noopener">Facebook →</a>
+            </div>
+          </div>
+
+          <div class="map-frame">
+            <iframe title="Mapa dojazdu — Projekt Świt Patryk Świtek" loading="lazy"
+              src="https://maps.google.com/maps?q=Gen.%20Jana%20Henryka%20D%C4%85browskiego%2013%2C%2042-202%20Cz%C4%99stochowa&t=&z=15&ie=UTF8&iwloc=&output=embed">
+            </iframe>
+          </div>
+        </div>
+
+        <div class="form-card">
+          <h3>Poproś o bezpłatną wycenę</h3>
+          <p class="section-sub">Wypełnij formularz — otworzy się w Twojej poczcie z gotową wiadomością do wysłania.</p>
+
+          <form id="quoteForm">
+            <div class="field-row">
+              <div class="field">
+                <label for="name">Imię i nazwisko</label>
+                <input id="name" name="name" type="text" required autocomplete="name">
+              </div>
+              <div class="field">
+                <label for="phone">Telefon</label>
+                <input id="phone" name="phone" type="tel" required autocomplete="tel">
+              </div>
+            </div>
+            <div class="field">
+              <label for="email">Adres e-mail</label>
+              <input id="email" name="email" type="email" required autocomplete="email">
+            </div>
+            <div class="field">
+              <label for="scope">Rodzaj instalacji</label>
+              <select id="scope" name="scope">
+                <option>Instalacja gazowa</option>
+                <option>Sieć / węzeł ciepłowniczy</option>
+                <option>Instalacja wodociągowa</option>
+                <option>Kanalizacja sanitarna / deszczowa</option>
+                <option>Wentylacja / klimatyzacja</option>
+                <option>Instalacja przeciwpożarowa</option>
+                <option>Kilka branż jednocześnie</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="message">Opis inwestycji</label>
+              <textarea id="message" name="message" placeholder="Lokalizacja, rodzaj budynku, dostępne dokumenty (mapa, PZT)..."></textarea>
+            </div>
+            <div class="field consent-field">
+              <label class="consent-label">
+                <input type="checkbox" id="consent" name="consent" required>
+                <span>Wyrażam zgodę na przetwarzanie moich danych osobowych podanych w formularzu przez Projekt Świt Patryk Świtek w celu przygotowania odpowiedzi na moje zapytanie i przedstawienia oferty, zgodnie z <a href="polityka-prywatnosci.html" target="_blank" rel="noopener">Polityką prywatności</a>. Zgoda jest dobrowolna, ale niezbędna do obsługi zapytania.</span>
+              </label>
+              <p class="consent-error" id="consentError">Zaznacz zgodę, aby wysłać formularz.</p>
+            </div>
+            <div class="form-foot">
+              <button type="submit" class="btn btn-copper">Wyślij zapytanie</button>
+              <span class="form-note">lub zadzwoń: 794 031 550</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-inner">
+      <a href="#top" class="logo">
+        <img src="assets/logo_icon_white.png" alt="" width="26" height="26">
+        Projekt Świt
+      </a>
+      <div class="footer-links">
+        <a href="#uslugi">Usługi</a>
+        <a href="#proces">Proces</a>
+        <a href="#opinie">Opinie</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="polityka-prywatnosci.html">Polityka prywatności</a>
+        <a href="tel:794031550">794 031 550</a>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <p><strong>Projekt Świt Patryk Świtek</strong> — Projekty sanitarne</p>
+      <p>ul. Gen. Jana Henryka Dąbrowskiego 13, lok. 7B, 42-202 Częstochowa</p>
+      <p>NIP: 5732919745 · REGON: 386393948</p>
+    </div>
+    <p class="footer-copy">© 2026 Projekt Świt — Patryk Świtek, Projekty sanitarne. Częstochowa, ul. Gen. J. H. Dąbrowskiego 13/7B.</p>
+  </div>
+</footer>
+
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Zgoda na pliki cookies">
+  <div class="cookie-banner-inner">
+    <p>Ta strona używa plików cookies niezbędnych do jej działania oraz — po Twojej zgodzie — narzędzi analitycznych, które pomagają nam ją ulepszać. Możesz zaakceptować wszystkie pliki cookies lub zostawić tylko niezbędne. Więcej informacji znajdziesz w <a href="polityka-prywatnosci.html">Polityce prywatności</a>.</p>
+    <div class="cookie-banner-actions">
+      <button type="button" class="btn btn-outline-dark" id="cookieRejectBtn">Tylko niezbędne</button>
+      <button type="button" class="btn btn-copper" id="cookieAcceptBtn">Akceptuję wszystkie</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const navLinks = document.getElementById('navLinks');
+  menuBtn.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', open);
+    menuBtn.textContent = open ? '✕' : '☰';
+  });
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    menuBtn.setAttribute('aria-expanded', false);
+    menuBtn.textContent = '☰';
+  }));
+
+  const form = document.getElementById('quoteForm');
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const consent = document.getElementById('consent');
+    const consentError = document.getElementById('consentError');
+    if (!consent.checked) {
+      consentError.classList.add('show');
+      consent.focus();
+      return;
+    }
+    consentError.classList.remove('show');
+
+    const name = document.getElementById('name').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const scope = document.getElementById('scope').value;
+    const message = document.getElementById('message').value.trim();
+    const subject = encodeURIComponent('Zapytanie o wycenę — ' + scope);
+    const body = encodeURIComponent(
+      'Imię i nazwisko: ' + name + '\n' +
+      'Telefon: ' + phone + '\n' +
+      'E-mail: ' + email + '\n' +
+      'Rodzaj instalacji: ' + scope + '\n\n' +
+      'Opis inwestycji:\n' + message
+    );
+    window.location.href = 'mailto:projektswit@gmail.com?subject=' + subject + '&body=' + body;
+  });
+
+  // ---------- Cookie consent ----------
+  // Ładuje skrypty analityczne (np. Google Analytics) TYLKO po wyrażeniu zgody.
+  // Aby podłączyć GA: wklej swój kod pomiaru wewnątrz funkcji loadAnalytics() poniżej.
+  function loadAnalytics(){
+    // przykład: wstaw tu snippet Google Analytics / Google Tag Manager
+    // console.log('Analytics załadowane po zgodzie użytkownika');
+  }
+
+  const cookieBanner = document.getElementById('cookieBanner');
+  const cookieAcceptBtn = document.getElementById('cookieAcceptBtn');
+  const cookieRejectBtn = document.getElementById('cookieRejectBtn');
+  const COOKIE_KEY = 'projektswit_cookie_consent';
+
+  function applyCookieConsent(value){
+    localStorage.setItem(COOKIE_KEY, value);
+    cookieBanner.classList.remove('show');
+    if (value === 'all') loadAnalytics();
+  }
+
+  const savedConsent = localStorage.getItem(COOKIE_KEY);
+  if (savedConsent === 'all') {
+    loadAnalytics();
+  } else if (!savedConsent) {
+    setTimeout(() => cookieBanner.classList.add('show'), 600);
+  }
+
+  cookieAcceptBtn.addEventListener('click', () => applyCookieConsent('all'));
+  cookieRejectBtn.addEventListener('click', () => applyCookieConsent('necessary'));
+</script>
+
+</body>
+</html>
